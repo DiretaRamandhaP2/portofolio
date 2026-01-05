@@ -101,7 +101,7 @@ const projects = [
         hosted: true,
         thumbnail: "./assets/img/project/ecocash/login-ecocash.png",
         screenshots: [
-            { src: "/assets/img/project/ecocash/login-ecocash.png", name: "Login", desc: "Halaman untuk user login dalam aplikasi" },
+            { src: "./assets/img/project/ecocash/login-ecocash.png", name: "Login", desc: "Halaman untuk user login dalam aplikasi" },
         ]
 
     },
@@ -126,7 +126,7 @@ const projects = [
         hosted: false,
         thumbnail: "./assets/img/project/knowtopia/landingpage.png",
         screenshots: [
-            { src: "/assets/img/project/knowtopia/landingpage.png", name: "Login", desc: "Halaman untuk user login dalam aplikasi" },
+            { src: "./assets/img/project/knowtopia/landingpage.png", name: "Login", desc: "Halaman untuk user login dalam aplikasi" },
         ]
 
     },
