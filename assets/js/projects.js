@@ -1,10 +1,10 @@
 const language = [
-    { name: "HTML", image: "assets/img/icon/language/html.png" },
-    { name: "CSS", image: "assets/img/icon/language/css.png" },
-    { name: "JavaScript", image: "assets/img/icon/language/js.png" },
+    { name: "HTML", image: "./assets/img/icon/language/html.png" },
+    { name: "CSS", image: "./assets/img/icon/language/css.png" },
+    { name: "JavaScript", image: "./assets/img/icon/language/js.png" },
     { name: "TypeScript", image: "" },
-    { name: "PHP", image: "assets/img/icon/language/php.png" },
-    { name: "Python", image: "assets/img/icon/language/python.png" },
+    { name: "PHP", image: "./assets/img/icon/language/php.png" },
+    { name: "Python", image: "./assets/img/icon/language/python.png" },
     { name: "Java", image: "" },
     { name: "C#", image: "" },
     { name: "Go", image: "" },
@@ -14,24 +14,24 @@ const language = [
 ];
 
 const frameWorks = [
-    { name: "Laravel", image: "assets/img/icon/frameWorks/laravel.png" },
+    { name: "Laravel", image: "./assets/img/icon/frameWorks/laravel.png" },
     { name: "React", image: "" },
     { name: "Vue", image: "" },
     { name: "Angular", image: "" },
-    { name: "Tailwind", image: "assets/img/icon/frameWorks/tailwindcss.png" },
+    { name: "Tailwind", image: "./assets/img/icon/frameWorks/tailwindcss.png" },
     { name: "Bootstrap", image: "" },
     { name: "Next.js", image: "" },
 ];
 
 const tools = [
-    { name: "GitHub", image: "assets/img/icon/tools/github.png" },
-    { name: "Git", image: "assets/img/icon/tools/git.png" },
+    { name: "GitHub", image: "./assets/img/icon/tools/github.png" },
+    { name: "Git", image: "./assets/img/icon/tools/git.png" },
     { name: "NPM", image: "" },
     { name: "Yarn", image: "" },
     { name: "Docker", image: "" },
-    { name: "VSCode", image: "assets/img/icon/tools/vsc.png" },
+    { name: "VSCode", image: "./assets/img/icon/tools/vsc.png" },
     { name: "Figma", image: "" },
-    { name: "Postman", image: "assets/img/icon/tools/postman.png" },
+    { name: "Postman", image: "./assets/img/icon/tools/postman.png" },
     { name: "Webpack", image: "" },
     { name: "Vite", image: "" },
 ];
@@ -56,8 +56,8 @@ const projects = [
             
         ],
         hosted: false,
-        thumbnail: ".assets/img/project/diagnosa/halaman-utama.png",
-        link: "https://diretaramandhap2.github.io/MoonpurunDesign/main.html",
+        thumbnail: "./assets/img/project/diagnosa/halaman-utama.png",
+        // link: "https://diretaramandhap2.github.io/MoonpurunDesign/main.html",
 
     },
     {
@@ -77,7 +77,7 @@ const projects = [
             { name: 'JavaScript' },
         ],
         hosted: true,
-        thumbnail: ".assets/img/project/moonpurun/landing-page.png",
+        thumbnail: "./assets/img/project/moonpurun/landing-page.png",
         link: "https://diretaramandhap2.github.io/MoonpurunDesign/main.html",
 
     },
@@ -99,9 +99,9 @@ const projects = [
             { name: 'PHP' },
         ],
         hosted: true,
-        thumbnail: ".assets/img/project/ecocash/login-ecocash.png",
+        thumbnail: "./assets/img/project/ecocash/login-ecocash.png",
         screenshots: [
-            { src: "assets/img/project/ecocash/login-ecocash.png", name: "Login", desc: "Halaman untuk user login dalam aplikasi" },
+            { src: "/assets/img/project/ecocash/login-ecocash.png", name: "Login", desc: "Halaman untuk user login dalam aplikasi" },
         ]
 
     },
@@ -124,9 +124,9 @@ const projects = [
             { name: 'JavaScript' },
         ],
         hosted: false,
-        thumbnail: ".assets/img/project/knowtopia/landingpage.png",
+        thumbnail: "./assets/img/project/knowtopia/landingpage.png",
         screenshots: [
-            { src: "assets/img/project/knowtopia/landingpage.png", name: "Login", desc: "Halaman untuk user login dalam aplikasi" },
+            { src: "/assets/img/project/knowtopia/landingpage.png", name: "Login", desc: "Halaman untuk user login dalam aplikasi" },
         ]
 
     },
