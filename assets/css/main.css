@@ -1,0 +1,164 @@
+/* Custom Styles */
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    /* Hero section height for mobile */
+    .hero-section {
+        min-height: calc(110vh - 80px);
+    }
+    
+    /* Responsive image sizes */
+    .profile-img {
+        width: 280px;
+        height: 280px;
+    }
+    
+    @media (min-width: 768px) {
+        .profile-img {
+            width: 480px;
+            height: 480px;
+        }
+    }
+    
+    /* Hamburger menu animation */
+    .hamburger-line {
+        transition: all 0.3s ease;
+    }
+    
+    .hamburger-active .hamburger-line:nth-child(1) {
+        transform: rotate(45deg) translate(6px, 6px);
+    }
+    
+    .hamburger-active .hamburger-line:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .hamburger-active .hamburger-line:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+    }
+    
+    /* Smooth transitions */
+    .transition-all {
+        transition: all 0.3s ease-in-out;
+    }
+
+    /* Floating decorative code icons 🔧 */
+    .floating-code {
+        pointer-events: none;
+        opacity: 0.95;
+        transition: transform 0.6s ease, opacity 0.6s ease;
+        will-change: transform, opacity;
+    }
+
+    @media (prefers-reduced-motion: no-preference) {
+        .floating-code {
+            transition: transform 0.8s cubic-bezier(.2,.8,.2,1), opacity .6s;
+        }
+    }
+
+    /* Language switcher flag styles */
+    #lang-switch {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
+    }
+
+    #lang-switch .lang-flag {
+        font-size: 1.05rem;
+        line-height: 1;
+        margin-right: 0.2rem;
+    }
+
+    #lang-switch .lang-code {
+        font-weight: 600;
+        letter-spacing: 0.4px;
+        font-size: 0.85rem;
+    }
+
+    /* Small hover lift for affordance */
+    #lang-switch:hover {
+        transform: translateY(-1px);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        #lang-switch:hover { transform: none; }
+    }
+
+    /* Themed form inputs - make inputs follow the current theme variables */
+    .themed-form input,
+    .themed-form textarea,
+    .themed-form select {
+        background: transparent;
+        border-width: 1px;
+        border-style: solid;
+        border-color: var(--text-muted);
+        color: var(--text-strong);
+        transition: border-color 0.18s ease, box-shadow 0.18s ease, color 0.18s ease;
+    }
+
+    .themed-form input::placeholder,
+    .themed-form textarea::placeholder {
+        color: var(--text-muted);
+        opacity: 0.9;
+    }
+
+    .themed-form input:focus,
+    .themed-form textarea:focus,
+    .themed-form select:focus {
+        outline: none;
+        border-color: var(--primary);
+        box-shadow: 0 0 0 6px var(--primary-light);
+    }
+
+    .themed-form button:focus {
+        outline: none;
+        box-shadow: 0 0 0 6px var(--primary-light);
+    }
+
+    /* Navbar theming: ensure nav and mobile menu use theme variables */
+    #main-nav {
+        background-color: var(--nav-bg) !important;
+        color: var(--nav-foreground, #fff);
+        transition: background-color 0.25s ease, color 0.25s ease;
+        backdrop-filter: saturate(110%) blur(6px);
+    }
+
+    /* Ensure top-level links in the navbar and mobile menu use theme foreground */
+    #main-nav a,
+    #mobile-menu a {
+        color: var(--nav-foreground, #fff) !important;
+    }
+
+    /* underline pseudo-element should use primary color */
+    #main-nav a::after {
+        background-color: var(--primary) !important;
+    }
+
+    /* Hamburger lines should match nav foreground */
+    #main-nav .hamburger-line {
+        background-color: var(--nav-foreground) !important;
+    }
+
+    /* Mobile menu background should follow theme nav color */
+    #mobile-menu {
+        background-color: var(--nav-bg) !important;
+    }
+
+    /* Mobile menu dividers use muted text color derived from nav foreground */
+    #mobile-menu li {
+        border-color: color-mix(in srgb, var(--nav-foreground) 8%, transparent) !important;
+    }
+
+    /* Mobile link hover: use primary as highlight */
+    #mobile-menu a:hover {
+        color: var(--primary) !important;
+        background-color: transparent !important;
+    }
+
+    /* When using lighter nav backgrounds (if theme defines a light nav), ensure adequate contrast */
+    @media (prefers-color-scheme: light) {
+        #main-nav a, #mobile-menu a {
+            color: var(--text-strong, #111) !important;
+        }
+    }
